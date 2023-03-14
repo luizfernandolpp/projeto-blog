@@ -62,11 +62,9 @@ header > nav > ul > li > a{
 header > nav > ul > li > a:hover{
     border-left: 2px solid var(--green);
     padding-left: 4px;
-}
-header > nav > ul > li:hover{
     font-weight: 600;
-    
 }
+
 
 header > nav > div#searchBox{
     display: flex;
