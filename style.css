@@ -52,21 +52,20 @@ header > nav > ul > li{
     gap: 3px;
 }
 
-header > nav > ul > li > div.greenBar{
-    display: none;
-
-    width: 2px;
-    height: 16px;
-    background-color: var(--green);
-}
-
 header > nav > ul > li > a{
+    display: flex;
+    align-items: center;
     color: var(--light-purple);
     text-decoration: none;
+    height: 16px;
 }
-
+header > nav > ul > li > a:hover{
+    border-left: 2px solid var(--green);
+    padding-left: 4px;
+}
 header > nav > ul > li:hover{
     font-weight: 600;
+    
 }
 
 header > nav > div#searchBox{
