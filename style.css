@@ -27,7 +27,7 @@ body{
 
 header{
     
-    padding: 20px;
+    padding: 10px;
     background-color: var(--purple-bg);
 }
 
@@ -36,7 +36,7 @@ header{
 header > nav{
     display: flex;
     justify-content: space-evenly;
-
+    padding: 5px;
     margin-bottom: 30px;
 }
 
