@@ -143,6 +143,7 @@ div#headerTextContent{
 main{
     grid-area: main;
     padding: 50px;
+    height: 100vh;
     background-color: var(--light-purple);
 
     display: grid;
