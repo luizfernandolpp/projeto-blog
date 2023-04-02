@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <title>Blog</title>
 </head>
 <body>
@@ -17,9 +18,8 @@
                 <li> <a href="#">Categorias</a></li>
                 <li> <a href="#">Contato</a></li>
             </ul>
-
             <div id="searchBox">
-                <input type="search" name="search" id="isearch" placeholder="Buscar">
+                <input type="search" name="search" id="isearch" placeholder="Buscar" autocomplete="off">
                 <button><img src="images/search.svg" alt="Search Icoon"></button>
             </div>
         </nav>
@@ -33,51 +33,48 @@
         </div>
     </header>
     <main>
-        <div id="greenLine"></div>
-        
-            <div id="articles123">
-                <article id="article1">
-                    <img src="images/post-1.png" alt="First Post">
-                        <p>Janeiro 04, 2022</p>
-                        <h2><a href="#">Começando no ReactJS em 2022</a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iste cupiditate commodi libero, quam veniam tempora eum, ut necessitatibus enim assumenda cum error hic quibusdam aspernatur quisquam id cumque esse?</p>
-                </article>
-                <div id="articles23">
-                    <article id="article2">
-                        <p>Janeiro 04, 2022</p>
-                        <h2><a href="#">Conheça as principais técnicas para conseguir uma vaga internacional em programação</a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, pariatur eum. Quidem, ut quo iusto in voluptates explicabo impedit odit esse autem sint cum atque accusamus eum at facere recusandae.</p>
-                    </article>
-                    <article id="article3">
-                        <p>Janeiro 04, 2022</p>
-                        <h2><a href=""><a href="#">Veja a evolução do Front-end na prática</a></a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam rerum in voluptate nihil itaque deserunt expedita fugiat ex consequatur vero, asperiores sapiente repellat sed dignissimos amet ab aut, quidem excepturi!</p>
-                    </article>
-                </div>
+        <section id="section1">
+            <div id="mainPost">
+                <img src="images/post-1.png" alt="Post 1">
+                <p>Janeiro 04, 2022</p>
+                <a href="#">Começando no ReactJS em 2022</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, labore perferendis totam officiis, nam laborum ad obcaecati qui eligendi maxime cum similique non odio aspernatur possimus pariatur minus reprehenderit sequi.</p>
             </div>
-        
-        
-            <div id="articles456">
-                <article id="article4">
-                    <img src="images/post-2.png" alt="">
-                    <p>Janeiro 04, 2022</p>
-                    <h2><a href="#">10 dicas para conseguir a vaga desejada</a></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, possimus? Consequuntur incidunt asperiores ipsam distinctio, officia voluptatum quae aspernatur molestiae corrupti vel ipsum! Distinctio natus ratione amet dicta vitae soluta.</p>
-                </article>
-                <article id="article5">
-                    <img src="images/post-3.png" alt="">
-                    <p>Janeiro 04, 2022</p>
-                    <h2><a href="#">Deixe seu código mais semântico com essas dicas</a></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque non unde iusto hic ex doloremque dignissimos provident quasi delectus, minus fugiat adipisci error facere odit ullam vero accusantium? Repellat, officiis?</p>
-                </article>
-                <article id="article6">
-                    <img src="images/post-4.png" alt="">
-                    <p>Janeiro 04, 2022</p>
-                    <h2><a href="#">Use essas dicas nas suas aplicações mobile</a></h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nostrum vitae omnis voluptatibus dolorem dicta dolores cum maxime ab possimus hic perspiciatis, sit explicabo eaque error aut est consequuntur nesciunt.</p>
-                </article>
+        </section>
+        <section id="section2">
+            <div>
+                <p>Janeiro 04, 2022</p>
+                <a href="#">Conheça as principais técnicas para conseguir uma vaga internacional em programação</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim accusamus nisi, iste assumenda fugit dolore unde alias quod aliquam? Quasi repellendus alias iusto sapiente quia non unde modi at nisi?</p>
             </div>
+            <hr>
+            <div>
+                <p>Janeiro 04, 2022</p>
+                <a href="#">Veja a evolução do Front-end na prática</a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta cum eius temporibus itaque ex atque magni quaerat consectetur. Esse quos aliquam est unde adipisci laboriosam nesciunt fuga obcaecati commodi maiores?</p>
+            </div>
+        </section> 
         
-    <script src="script.js"></script>
+        <section id="section3">
+            <div>
+                <img src="images/post-2.png" alt="Post 2">
+                <p>Janeiro 04, 2022</p>
+                <a href="#">10 dicas para conseguir a vaga desejada</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur dolor quidem unde atque impedit et culpa, maxime repudiandae quae. Eos autem quo esse id ex quia veritatis tempora illum.</p>
+            </div>
+            <div>
+                <img src="images/post-3.png" alt="Post 3">
+                <p>Janeiro 04, 2022</p>
+                <a href="#">Deixe seu código mais semântico com essas dicas</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, dolores aperiam. Ad eum beatae eius incidunt quo aut, cum soluta error fugit provident in consectetur iste! Culpa quae quisquam praesentium!</p>
+            </div>
+            <div>
+                <img src="images/post-4.png" alt="Post 4">
+                <p>Janeiro 04, 2022</p>
+                <a href="#">Use essas dicas nas suas aplicações mobile</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cupiditate cumque iste illum eaque! Sunt expedita sapiente, provident nesciunt quis natus rerum perferendis odit illo, quisquam blanditiis ea? Laboriosam, vero!</p>
+            </div>
+        </section> 
+
 </body>
 </html>

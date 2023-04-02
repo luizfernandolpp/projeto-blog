@@ -1,0 +1,10 @@
+@media screen and (max-width: 865px){
+    header{
+        height: 20vh;
+    }
+    
+    header div#headerContainer{
+        display: none;
+    }
+
+   

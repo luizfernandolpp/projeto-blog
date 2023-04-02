@@ -23,186 +23,212 @@
 body{
     width: 100vw;
     height: 100vh;
+    
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main";
+    
 }
 
 header{
-    
-    padding: 10px;
+    grid-area: header;
+    height: 600px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom: 5px solid var(--green);
     background-color: var(--purple-bg);
 }
 
-/* Estilos para a barra de navegação */ 
-
 header > nav{
     display: flex;
-    justify-content: space-evenly;
-    padding: 5px;
-    margin-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-header > nav > ul{
-    display: flex;
-    gap: 25px;
+header ul{
     list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
 }
 
-header > nav > ul > li{
-    display: flex;
-    align-items: center;
-    gap: 3px;
-}
+/* Estilos para a barra de navegação */
 
-header > nav > ul > li > a{
-    display: flex;
-    align-items: center;
-    color: var(--light-purple);
+nav a{
+    padding: 0 5px;
+
     text-decoration: none;
-    height: 16px;
+    color: var(--light-purple);
+    font-size: 1.2em;
 }
-header > nav > ul > li > a:hover{
+
+nav a:hover{
     border-left: 2px solid var(--green);
-    padding-left: 4px;
-    font-weight: 600;
 }
 
-
-header > nav > div#searchBox{
+header div#searchBox{
     display: flex;
-    gap: 0px;
 }
 
-header > nav > div#searchBox > input{
+div#searchBox > input{
     border: none;
     background-color: var(--dark-bg);
-    cursor: pointer;
-
+    color: var(--light-purple);
+    
     font-size: 1em;
-    color: var(--light-purple);
-    text-indent: 15px;
+    text-indent: 10px;
 }
 
-header > nav > div#searchBox > button{
-    width: 60px;
+div#searchBox > input:focus-within{
     border: none;
+}
+
+div#searchBox > button{
+    padding: 5px 0;
     background-color: var(--button-bg);
-    cursor: pointer;
+    border: none;
+    width: 40px;
+    height: 40px;
 }
 
-/* Estilos para o conteúdo do Header */
+/* Estilos para o conteúdo do header */
 
-header > div#headerContainer{
+header div#headerContainer{
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-   
-    
-}
-
-header > div#headerContainer > div#headerTextContent{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 20%;
-    flex-shrink: 0;
+    justify-content: space-around;
+    align-items: center;
     gap: 10px;
+    
+    
 }
 
-header > div#headerContainer > div#headerTextContent > h1{
+div#headerContainer h1{
     color: var(--button-bg);
-    
-    
 }
 
-header > div#headerContainer > div#headerTextContent > p{
+div#headerContainer p{
     color: var(--light-purple);
-    margin-bottom: 10px;
 }
 
-header > div#headerContainer > div#headerTextContent > a{
+div#headerContainer a{
     display: flex;
-    gap: 5px;
-    color: var(--button-bg);
+    align-items: center;
+    gap: 10px;
+
     text-decoration: none;
+    color: var(--light-purple);
 }
 
-header > div#headerContainer > div#headerTextContent > a:hover{
+div#headerContainer a:hover{
     text-decoration: underline;
 }
 
-header > div#headerContainer > img#headerImg{
+div#headerTextContent{
+    width: 40vw;
     display: flex;
-    flex-basis: 40%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 /* Estilos para o main */
 
-main > div#greenLine{
-    width: 100vw;
-    height: 5px;
-    background-color: var(--green);
-}
+main{
+    grid-area: main;
+    padding: 50px;
+    background-color: var(--light-purple);
 
-main h2{
-    color: var(--purple-bg);
+    display: grid;
+    grid-template-areas: 
+    "section1 section2"
+    "section3 section3";
+    justify-content: space-around;
+    gap: 50px;
 }
 
 main a{
     text-decoration: none;
     color: var(--purple-bg);
+
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 main a:hover{
-    text-decoration: underline;
+    color: var(--button-bg);
+    cursor: pointer;
 }
 
-main > div#articles123{
-    padding: 10px;
-    margin-bottom: 60px;
+main p{
+    font-weight: 500;
+}
 
+/* Estilos para a seção principal */
+
+
+div#mainPost{
+    grid-area: section1;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+div#mainPost p{
+    width: 600px;
+    text-align: justify;
+}
+
+/* Estilos para a seção lateral */
+
+section#section2{
+    grid-area: section2;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section#section2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+section#section2 hr{
+    border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+/* Estilos para a última seção */
+
+section#section3{
+    grid-area: section3;
+    padding-left: 60px;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+
 }
 
-main> div#articles123 > #article1{
-    padding: 10px;
-    width: 35%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-}
-
-main > div#articles123 > div#articles23{
-    padding: 10px;
-    width: 30%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-} 
-
-div#articles123 > div#articles23 > article{
+section#section3 div{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-div#articles456{
-    padding: 10px;
-  
-
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    
+section#section3 img{
+    width: 450px;
 }
 
-div#articles456 > article{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    width: 25%;
-    padding: 10px;
-
-}
